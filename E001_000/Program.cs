@@ -23,7 +23,7 @@ for (int d = 0; d < 100; d++)
     Console.WriteLine("время входа " + HourOpen);
     Console.WriteLine("время выхода " + HourClose);
 
-    int count = 2;
+    int count = 1;
     for (int i = HourOpen + 1; i < HourClose; i++)
     {
         count++;
