@@ -85,7 +85,7 @@ for (int d = 0; d < 100; d++)
 }
 Console.WriteLine();
 for (int g = 0; g < 9; g++)
-    Console.WriteLine($"{"счетчик по часам "}  {g+8}  {Counter[g]}");
+    Console.WriteLine($"{"счетчик по часам "}  {g + 8}  {Counter[g]}");
 int maxCounter = 0;
 for (int s = 0; s < 9; s++)
 {
