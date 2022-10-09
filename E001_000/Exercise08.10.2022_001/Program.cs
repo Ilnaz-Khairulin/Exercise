@@ -67,3 +67,35 @@
 // average[k]=average[k]/3;
 // System.Console.Write(Math.Round(average[k],1) + "; ");
 // }
+
+// Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве,
+// и возвращает значение этого элемента или же указание, что такого элемента нет.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// 17 -> такого числа в массиве нет
+
+
+int[,] array = new int[3, 4]
+{       {1,4,7,2},
+        {5,9,2,3},
+        {8,4,2,4}
+};
+int m = 0;
+int n = 0;
+int[] position = new int[2];
+position[0] = new Random().Next(0, 9);
+position[1] = new Random().Next(0, 9);
+System.Console.Write("(" + position[0] + "," + position[1] + ")");
+if (position[0] >= 0 && position[0] < 3 && position[1] >= 0 && position[1] < 4)
+{
+
+    m = position[0];
+    n = position[1];
+    System.Console.WriteLine(" = " + array[m, n]);
+
+
+}
+else
+    System.Console.WriteLine("-> такого числа в массиве нет. ");
