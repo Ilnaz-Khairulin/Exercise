@@ -76,71 +76,71 @@ void FillArray(int[,] array, int siz, int m)
 
 
 
-// int siz = new Random().Next(2, 4);
-// int m = new Random().Next(2, 4);
-// int[,] array = new int[siz, m];
-// FillArray(array, siz, m);
-// Print(array, siz, m);
+int siz = new Random().Next(2, 4);
+int m = new Random().Next(2, 4);
+int[,] array = new int[siz, m];
+FillArray(array, siz, m);
+Print(array, siz, m);
 
-// Console.WriteLine();
+Console.WriteLine();
 
-// int siz1 = new Random().Next(2, 4);
-// int m1 = new Random().Next(2, 4);
-// int[,] array1 = new int[siz1, m1];
-// FillArray(array1, siz1, m1);
-// Print(array1, siz1, m1);
-// Console.WriteLine();
-
-
-// if (siz == m1 || siz1 == m)
-// {
-//     if (siz == m1)
-//     {
-
-//         int[,] arrayKub = new int[siz1, m];
-//         Print(arrayKub, siz1, m);
-//         for (int i = 0; i < arrayKub.GetLength(0); i++)
-//         {
-//             for (int j = 0; j < arrayKub.GetLength(1); j++)
-//             {
-//                 for (int n = 0; n < siz; n++)
-//                 {
+int siz1 = new Random().Next(2, 4);
+int m1 = new Random().Next(2, 4);
+int[,] array1 = new int[siz1, m1];
+FillArray(array1, siz1, m1);
+Print(array1, siz1, m1);
+Console.WriteLine();
 
 
-//                     arrayKub[i, j] = arrayKub[i, j] + array[n, i] * array1[j, n];
+if (siz == m1 || siz1 == m)
+{
+    if (siz == m1)
+    {
 
-//                 }
+        int[,] arrayKub = new int[siz1, m];
+        Print(arrayKub, siz1, m);
+        for (int i = 0; i < arrayKub.GetLength(0); i++)
+        {
+            for (int j = 0; j < arrayKub.GetLength(1); j++)
+            {
+                for (int n = 0; n < siz; n++)
+                {
 
 
+                    arrayKub[i, j] = arrayKub[i, j] + array[n, j] * array1[i, n];
 
-//             }
-//         }
-//         Print(arrayKub, siz1, m);
-
-//     }
-//     else
-//     {
-//         int[,] arrayKub = new int[siz, m1];
-//         Print(arrayKub, siz, m1);
-//         for (int i = 0; i < arrayKub.GetLength(0); i++)
-//         {
-//             for (int j = 0; j < arrayKub.GetLength(1); j++)
-//             {
-//                 for (int n = 0; n < siz; n++)
-//                 {
-//                     arrayKub[i, j] = arrayKub[i, j] + array[n, i] * array1[j, n];
-
-//                 }
+                }
 
 
 
-//             }
+            }
+        }
+        Print(arrayKub, siz1, m);
 
-//         }
-//         Print(arrayKub, siz, m1);
-//     }
+    }
+    else
+    {
+        int[,] arrayKub = new int[siz, m1];
+        Print(arrayKub, siz, m1);
+        for (int i = 0; i < arrayKub.GetLength(0); i++)
+        {
+            for (int j = 0; j < arrayKub.GetLength(1); j++)
+            {
+                for (int n = 0; n < siz1; n++)
+                {
+                    arrayKub[i, j] = arrayKub[i, j] + array[n, j] * array1[i, n];
 
-// }
+                }
+
+
+
+            }
+
+        }
+        Print(arrayKub, siz, m1);
+    }
+
+}
 
 
 
