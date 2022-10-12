@@ -4,7 +4,7 @@
 
 int siz = new Random().Next(2, 20);
 int[] array = new int[siz];
-System.Console.WriteLine("Величина массива = "+siz);
+Console.WriteLine("Величина массива = "+siz);
 void Newarray(int[] array, int siz)
 {
     for (int i = 0; i < siz; i++)

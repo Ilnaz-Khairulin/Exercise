@@ -32,13 +32,13 @@
 //  заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
-System.Console.WriteLine("Введите b1 ");
+Console.WriteLine("Введите b1 ");
 double b1 = double.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите к1 ");
+Console.WriteLine("Введите к1 ");
 double k1 = double.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите b2 ");
+Console.WriteLine("Введите b2 ");
 double b2 = double.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите k2 ");
+Console.WriteLine("Введите k2 ");
 double k2 = double.Parse(Console.ReadLine());
 double a= b2-b1;
 double a1= k1-k2; 
@@ -47,7 +47,7 @@ double y = k1*x+b1;
 double y1= k2*x+b2;
 if(y==y1)
 {
-    System.Console.WriteLine($"{"координаты пересечения прямых равна = "} ({y}; {x})");
+        Console.WriteLine($"{"координаты пересечения прямых равна = "} ({y}; {x})");
 }
 else
-System.Console.WriteLine("прямые не пересикаються!");
+Console.WriteLine("прямые не пересикаються!");
